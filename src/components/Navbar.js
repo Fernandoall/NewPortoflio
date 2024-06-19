@@ -1,9 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css"; // Importe o arquivo de estilos do Navbar
+import { motion } from "framer-motion";
+import "./Style/Navbar.css"; // Importe o arquivo de estilos do Navbar
 
 const Navbar = () => (
-  <nav className="navbar">
+  <motion.nav
+    className="navBar"
+    initial={{ y: -250 }}
+    animate={{ y: 0 }}
+    transition={{ type: "spring", stiffness: 120 }}
+  >
     <ul className="nav-links">
       <li>
         <Link to="/">Home</Link>
@@ -18,7 +24,7 @@ const Navbar = () => (
         <Link to="/Contato">Contato</Link>
       </li>
     </ul>
-  </nav>
+  </motion.nav>
 );
 
 export default Navbar;

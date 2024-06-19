@@ -1,0 +1,19 @@
+.sobre-container {
+  padding: 2rem;
+}
+
+.sobre-content {
+  display: flex;
+  align-items: center;
+}
+
+.sobre-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+p {
+  color: #555;
+}
