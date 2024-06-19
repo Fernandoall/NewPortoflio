@@ -1,17 +1,15 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const Projetos = () => (
-  <div>
-    <h2>Meus Projetos</h2>
-    <ul>
-      <li>
-        Projeto 1: <a href="Link-do-projeto-1">Descrição do projeto 1</a>
-      </li>
-      <li>
-        Projeto 1: <a href="Link-do-projeto-2">Descrição do projeto 2</a>
-      </li>
-    </ul>
-  </div>
+  <motion.div
+    initial={{ scale: 0.8 }}
+    animate={{ scale: 1 }}
+    transition={{ duration: 0.5 }}
+  >
+    <h1>Meus Projetos</h1>
+    <p>Detalhes dos seus projetos.</p>
+  </motion.div>
 );
 
 export default Projetos;
