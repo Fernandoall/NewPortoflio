@@ -1,10 +1,17 @@
 .sobre-container {
   padding: 2rem;
+  background-image: url("");
+  background-size: cover;
+  background-position: center;
 }
 
 .sobre-content {
   display: flex;
   align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
 }
 
 .sobre-pic {
@@ -15,5 +22,5 @@
 }
 
 p {
-  color: #555;
+  color: var(--text-color);
 }

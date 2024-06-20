@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaLaptopCode } from "react-icons/fa";
 import "./Style/Sobre.css";
 
 const Sobre = () => (
