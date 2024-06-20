@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaDownload } from "react-icons/fa";
 import "./Style/Home.css";
 
 const Home = () => (
@@ -18,11 +19,19 @@ const Home = () => (
       />
       <h1 className="home-title">Bem-vindo ao meu portfólio</h1>
       <p className="home-description">
-        Eu sou [Seu Nome], um desenvolvedor [sua especialidade].
+        Eu sou Fernando, tenho 27 anos e estou cursando Análise e
+        Desenvolvimento de Sistemas. Tenho proficiência em desenvolvimento
+        front-end.
       </p>
-      <a href="/path/to/your/cv.pdf" className="btn" download>
-        Baixar CV
-      </a>
+      <motion.a
+        href="/path/to/your/cv.pdf"
+        className="btn"
+        download
+        whileHover={{ scale: 1.1 }}
+        transition={{ type: "spring", stiffness: 300 }}
+      >
+        <FaDownload /> Baixar CV
+      </motion.a>
     </div>
   </motion.div>
 );

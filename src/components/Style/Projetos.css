@@ -16,4 +16,36 @@
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.projeto-card h2 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.projeto-card p {
+  color: #555;
+}
+
+.projeto-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.projeto-links a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.projeto-links a:hover {
+  color: #0056b3;
+}
+
+.projeto-links a svg {
+  margin-right: 0.5rem;
 }

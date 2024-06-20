@@ -11,7 +11,12 @@ const Contato = () => (
     transition={{ type: "spring", stiffness: 50 }}
   >
     <h1>Contato</h1>
-    <form className="contato-form">
+    <motion.form
+      className="contato-form"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
       <label>
         Nome:
         <input type="text" name="name" required />
@@ -24,8 +29,10 @@ const Contato = () => (
         Mensagem:
         <textarea name="message" required />
       </label>
-      <button type="submit">Enviar</button>
-    </form>
+      <motion.button type="submit" whileHover={{ scale: 1.05 }}>
+        Enviar
+      </motion.button>
+    </motion.form>
   </motion.div>
 );
 

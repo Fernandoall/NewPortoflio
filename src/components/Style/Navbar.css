@@ -32,8 +32,14 @@
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
 }
 
 .nav-links li a:hover {
   color: #f5a623;
+}
+
+.nav-links li a svg {
+  margin-right: 0.5rem;
 }
