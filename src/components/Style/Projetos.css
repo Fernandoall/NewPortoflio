@@ -1,44 +1,82 @@
+/* Estilos para o contêiner dos projetos */
 .projetos-container {
-  padding: 2rem;
-  text-align: center;
-  background-image: url("");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
   background-size: cover;
   background-position: center;
+  text-align: center;
+  padding: 3rem;
+  color: white;
 }
 
+/* Estilos para a grade dos projetos */
 .projetos-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+  gap: 3rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
-.projeto-card {
-  width: 300px;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
+/* Estilos para os cartões dos projetos */
+.project-card {
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Fundo semi-transparente para destacar o conteúdo */
+  padding: 2rem;
+  border-radius: 10px;
   transition: transform 0.3s ease;
-}
-
-.projeto-card:hover {
-  transform: translateY(-5px);
-}
-
-.projeto-links {
+  color: white;
   display: flex;
-  justify-content: space-between;
-  margin-top: 1rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
 }
 
+.project-card:hover {
+  transform: translateY(-10px); 
+  opacity: 0.8;
+}
+
+/* Estilos para as imagens dos projetos */
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+/* Estilos para os títulos dos projetos */
+.project-card h2 {
+  margin-bottom: 0.5rem;
+  color: black; 
+}
+
+/* Estilos para as descrições dos projetos */
+.project-card p {
+  margin: 0;
+  color: black; 
+}
+
+/* Estilos para o título "Meus Projetos" */
+.projetos-container h1 {
+  color: black; 
+}
+
+/* Estilos para os links */
 .projeto-links a {
-  color: var(--primary-color);
+  margin: 1rem;
+  font-size: 14px;
+  color: black;
   text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s ease;
 }
 
 .projeto-links a:hover {
-  color: var(--secondary-color);
+  color: rgb(37, 96, 121);
 }

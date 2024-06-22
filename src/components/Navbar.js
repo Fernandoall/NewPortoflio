@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { FaBars } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "./Style/Navbar.css";
+import logo from "./Style/img/logoProjeto.avif"; // Adicione o logo desejado
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,13 +15,16 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <motion.nav
       className={`navbar ${darkMode ? "dark-mode" : ""}`}
-      initial={{ x: -300 }}
-      animate={{ x: isOpen ? 0 : -300 }}
+      initial={{ x: -250 }}
+      animate={{ x: isOpen ? 0 : -250 }}
       transition={{ type: "spring", stiffness: 120 }}
     >
       <div className="nav-container">
-        <div className="menu-icon" onClick={toggleMenu}>
-          <FaBars className={`hamburger ${isOpen ? "open" : ""}`} />
+        <div className="toggle-icon" onClick={toggleMenu}>
+          {isOpen ? <FaArrowLeft /> : <FaArrowRight />}
+        </div>
+        <div className="logo-container">
+          <img src={logo} alt="Logo" className="logo" />
         </div>
         <ul className={`nav-links ${isOpen ? "open" : ""}`}>
           <li>

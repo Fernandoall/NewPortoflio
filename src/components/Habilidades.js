@@ -2,6 +2,7 @@ import React from "react";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "./Style/Habilidades.css";
+import habilidadeBackground from "./Style/img/imageFundoHabilidade.tiff";
 
 const skills = [
   { name: "HTML5", icon: <FaHtml5 />, level: "Avançado" },
@@ -20,8 +21,9 @@ const Habilidades = () => (
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
+    style={{ backgroundImage: `url(${habilidadeBackground})` }}
   >
-    <h2>Habilidades</h2>
+    <h2 style={{ color: "white" }}>Habilidades</h2>
     <div className="skills-grid">
       {skills.map((skill, index) => (
         <motion.div

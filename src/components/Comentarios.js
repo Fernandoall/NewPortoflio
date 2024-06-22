@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Style/Comentarios.css";
+import comentarios from "./Style/img/imageComentarios.tiff";
 
 const testimonials = [
   { name: "John Doe", feedback: "Fernando é um desenvolvedor incrível!" },
@@ -25,18 +26,6 @@ const testimonials = [
     name: "João Pedro",
     feedback: "Sempre pronto para ajudar e colaborar com sua equipe.",
   },
-  {
-    name: "Ana Luiza",
-    feedback: "Grande capacidade de liderança e comunicação eficaz.",
-  },
-  {
-    name: "Pedro Henrique",
-    feedback: "Excelente profissional, comprometido com a qualidade.",
-  },
-  {
-    name: "Mariana Santos",
-    feedback: "Habilidades técnicas impressionantes e dedicação inigualável.",
-  },
 ];
 
 const Testemunhos = () => (
@@ -45,16 +34,22 @@ const Testemunhos = () => (
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 1 }}
+    style={{ backgroundImage: `url(${comentarios})` }}
   >
-    <h2>Comentários</h2>
+    <h2 style={{ color: "white" }}>Comentários</h2>
     <div className="testemunhos-list">
       {testimonials.map((testimonial, index) => (
         <motion.div
           key={index}
           className="testimonial-card"
-          initial={{ opacity: 0, x: -100 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.2 }}
+          whileHover={{
+            scale: 1.05,
+            boxShadow: "0 4px 8px rgba(0, 0, 0, 0.2)",
+          }}
+          whileTap={{ scale: 0.95 }}
         >
           <p>"{testimonial.feedback}"</p>
           <h4>- {testimonial.name}</h4>

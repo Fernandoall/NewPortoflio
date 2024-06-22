@@ -12,7 +12,7 @@ const Sobre = () => (
   >
     <h1>Sobre Mim</h1>
     <div className="sobre-content">
-      <img src="path/to/your/profile.jpg" alt="Profile" className="sobre-pic" />
+      <img src="" alt="" className="sobre-pic" />
       <div>
         <p>
           Eu sou Fernando, tenho 27 anos e estou cursando Análise e
