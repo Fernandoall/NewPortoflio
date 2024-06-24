@@ -1,39 +1,68 @@
-.habilidades-container {
-  padding: 2rem;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
-  max-width: 800px;
+.sobre-container {
   width: 100%;
-  margin-top: 2rem;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #9932cd, #4b0082);
+  color: white;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: center; /* Centraliza todo o conteúdo verticalmente */
+  align-items: center; /* Centraliza todo o conteúdo horizontalmente */
 }
 
-.skill-card {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.intro-section {
+  max-width: 800px; /* Reduzi a largura para centralizar melhor */
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
 
-.skill-card h3 {
-  margin: 1rem 0 0.5rem;
-  font-size: 1.2rem;
-  color: #333;
+.skills-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Altura ajustada para melhor visualização */
 }
 
-.skill-card p {
-  margin: 0;
-  font-size: 1rem;
-  color: #555;
+.skill-card {
+  position: relative;
+  max-width: 300px; /* Largura máxima do card */
+  overflow: hidden; /* Esconde conteúdo fora do card */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: rgba(128, 0, 128, 0.8); /* Cor de fundo */
+  padding: 2rem; /* Espaçamento interno */
+  color: white; /* Cor do texto */
+}
+
+.card-content {
+  padding: 2rem;
+}
+
+.skill-icon {
+  font-size: 4rem; /* Ajusta o tamanho do ícone */
+  margin-bottom: 1rem;
+}
+
+.navigation {
+  margin-top: 1rem;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 2.5rem; /* Ajusta o tamanho das setas */
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  position: relative; /* Permite o posicionamento absoluto */
+  z-index: 1; /* Coloca as setas sobre o fundo roxo */
+}
+
+.nav-button:hover {
+  color: #f0f0f0; /* Cor das setas ao passar o mouse */
 }

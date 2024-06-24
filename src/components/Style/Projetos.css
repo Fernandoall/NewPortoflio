@@ -1,82 +1,104 @@
-/* Estilos para o contêiner dos projetos */
+/* Style/Projetos.css */
+
 .projetos-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
   min-height: 100vh;
-  background-size: cover;
-  background-position: center;
-  text-align: center;
-  padding: 3rem;
+  background: linear-gradient(135deg, #9932cd, #4b0082);
   color: white;
+  padding: 2rem 0;
 }
 
-/* Estilos para a grade dos projetos */
-.projetos-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Duas colunas */
-  gap: 3rem;
-  width: 100%;
+.projects-section {
   max-width: 1200px;
-}
-
-/* Estilos para os cartões dos projetos */
-.project-card {
-  background: rgba(
-    0,
-    0,
-    0,
-    0.5
-  ); /* Fundo semi-transparente para destacar o conteúdo */
+  margin: 0 auto;
   padding: 2rem;
-  border-radius: 10px;
-  transition: transform 0.3s ease;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: left;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.project-card:hover {
-  transform: translateY(-10px); 
-  opacity: 0.8;
-}
-
-/* Estilos para as imagens dos projetos */
-.project-image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+h1 {
+  text-align: center;
   margin-bottom: 1rem;
 }
 
-/* Estilos para os títulos dos projetos */
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.project-card {
+  background: rgba(128, 0, 128, 0.8);
+  padding: 2rem;
+  border-radius: 15px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 50vh;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  background: rgba(128, 0, 128, 1);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
 .project-card h2 {
   margin-bottom: 0.5rem;
-  color: black; 
+  color: #fff;
 }
 
-/* Estilos para as descrições dos projetos */
 .project-card p {
   margin: 0;
-  color: black; 
+  color: #ddd;
 }
 
-/* Estilos para o título "Meus Projetos" */
-.projetos-container h1 {
-  color: black; 
-}
-
-/* Estilos para os links */
 .projeto-links a {
   margin: 1rem;
-  font-size: 14px;
-  color: black;
+  font-size: 16px;
+  color: #fff;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .projeto-links a:hover {
-  color: rgb(37, 96, 121);
+  color: #ff00ff;
+}
+
+.projeto-links a svg {
+  margin-right: 0.5rem;
+}
+
+.navigation {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation button {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+}
+
+.navigation button:hover {
+  color: #f0f0f0;
 }
