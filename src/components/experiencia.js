@@ -20,19 +20,6 @@ const experiencias = [
     year: "2024",
     description: "Freelancer em projetos de desenvolvimento web.",
   },
-  {
-    year: "2025",
-    description:
-      "Iniciando como desenvolvedor full-stack em uma empresa de tecnologia.",
-  },
-  {
-    year: "2026",
-    description: "Lançamento de um projeto pessoal significativo.",
-  },
-  {
-    year: "2027",
-    description: "Contribuições significativas em projetos open-source.",
-  },
 ];
 
 const Experiencia = () => (

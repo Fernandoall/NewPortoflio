@@ -9,6 +9,7 @@ import {
   FaGitAlt,
 } from "react-icons/fa";
 import "./Style/Sobre.css";
+import newImagem from "./Style/img/NewImagem.jpg";
 
 const skills = [
   { icon: <FaHtml5 size={50} color="#E34F26" />, label: "HTML5" },
@@ -45,8 +46,8 @@ const Sobre = () => {
       <section className="intro-section">
         <h1>Sobre Mim</h1>
         <div className="sobre-content">
-          <img src="" alt="Fernando" className="sobre-pic" />
-          <div className="text-content">
+          <img src={newImagem} alt="Fernando" className="sobre-pic" />
+          <div class="text-content">
             <p>
               Eu sou Fernando, tenho 27 anos e estou cursando Análise e
               Desenvolvimento de Sistemas. Tenho proficiência em desenvolvimento

@@ -50,7 +50,7 @@ const Testemunhos = () => (
             }}
             whileTap={{ scale: 0.95 }}
           >
-            <p>"{testimonial.feedback}"</p>
+            <p className="paragrafocomentario">"{testimonial.feedback}"</p>
             <h4>- {testimonial.name}</h4>
           </motion.div>
         ))}

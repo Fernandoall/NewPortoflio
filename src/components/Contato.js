@@ -12,7 +12,11 @@ const Contato = () => (
   >
     <h1>Contato</h1>
     <div className="contato-form">
-      <form action="https://formspree.io/f/your-form-id" method="POST">
+      <form
+        action="https://formspree.io/f/your-form-id"
+        method="POST"
+        className="form-content"
+      >
         <label htmlFor="name">Nome:</label>
         <input type="text" id="name" name="name" required />
 

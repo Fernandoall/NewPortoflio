@@ -21,6 +21,14 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+p {
+  color: white !important;
+}
+
+h2 {
+  color: white !important;
+}
+
 .sobre-content {
   display: flex;
   align-items: center;
@@ -39,6 +47,10 @@
 .text-content {
   max-width: 600px;
   color: white; /* Definindo a cor do texto como branco */
+}
+
+p {
+  color: white;
 }
 
 h1,

@@ -1,40 +1,73 @@
 .contato-container {
-  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #9932cd, #4b0082);
+  color: white;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contato-container h1 {
   text-align: center;
+  margin-bottom: 2rem;
+  color: white;
 }
 
 .contato-form {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto; /* Centraliza o formulário */
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-content {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 label {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
 }
 
 input,
 textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.75rem;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
 }
 
-button {
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #9932cd;
+  box-shadow: 0 0 5px rgba(153, 50, 205, 0.5);
+}
+
+.btn {
+  align-self: center; /* Alinha o botão ao centro */
+  width: 100%; /* Ocupa toda a largura do container */
   padding: 0.75rem 1.5rem;
-  background: #f5a623;
+  background: #9932cd;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: background 0.3s ease;
+  font-size: 1.1rem;
+  max-width: 200px; /* Define uma largura máxima para o botão */
 }
 
-button:hover {
-  background: #333;
+.btn:hover {
+  background: #4b0082;
 }

@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import "./Style/Projetos.css";
-import imageProjeto1 from "./Style/img/imageProjeto1.jpg"; // Importe suas imagens conforme necessário
+import imageProjeto1 from "./Style/img/imageProjeto1.jpg";
+import imageProjeto2 from "./Style/img/imageProjeto2.jpg";
 
 const projetos = [
   {
@@ -16,8 +17,8 @@ const projetos = [
     nome: "Projeto 2",
     descricao: "Descrição do projeto 2.",
     linkProjeto: "link_to_project2",
-    linkGithub: "link_to_github2",
-    imagem: "path_to_image2", // Insira o caminho da imagem aqui
+    linkGithub: "https://github.com/Fernandoall/LC-Consultoria",
+    imagem: imageProjeto2, // Insira o caminho da imagem aqui
   },
   {
     nome: "Projeto 3",
